@@ -10,3 +10,8 @@ if (Posts.find().count() === 0) { Posts.insert({
     title: 'The Meteor Book',
     url: 'http://themeteorbook.com'
 }); }
+
+if (Info.find().count() === 0){ Info.insert({
+		userDescription: 'tall, dark and hairy'
+	});
+};
