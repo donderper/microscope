@@ -1,0 +1,13 @@
+<template name="homePage">
+	{{#if displayStart}}
+	<div class="post">
+		<div class="post-content">
+
+			<h3><a>Are you in?</a><span>you have to click the button</span></h3>
+		</div>
+		<a href="{{pathFor 'gameScreen'}}" class="discuss btn btn-default">Yes</a>
+	</div>
+	{{else}}
+	<img src="welcomePage.gif">
+	{{/if}}
+</template>

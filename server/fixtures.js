@@ -11,7 +11,11 @@ if (Posts.find().count() === 0) { Posts.insert({
     url: 'http://themeteorbook.com'
 }); }
 
-if (Info.find().count() === 0){ Info.insert({
-		userDescription: 'tall, dark and hairy'
+if (DisplayStart.find().count() === 0){ DisplayStart.insert({
+		displayStart: 'false'
 	});
-};
+}
+if (HasGameStarted.find().count() === 0){ HasGameStarted.insert({
+		hasGameStarted: 'false'
+	});
+}
